@@ -1,0 +1,111 @@
+if game.PlaceId == 5490351219 then
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Clicking Simulator", HidePremium = false, IntroEnabled = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+--values
+_G.autoTap = true
+_G.autoRebirth = true
+_G.autoEgg = true
+
+--functions
+
+function autoTap()
+    while _G.autoTap == true do
+        local args = {[1] = 1}
+        game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+        wait()
+     end
+    end
+
+
+function autoRebirth()
+    spawn(function ()
+        while _G.autoRebirth == true do
+            local args = {[1] = 1}
+            game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(unpack(args))
+            wait()
+    end 
+     end)
+    end
+ function autoEgg()
+    while _G.autoEgg == true do
+        local args = {[1] = "basic"}
+        game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggService.Purchase:FireServer(unpack(args))
+        wait(5)
+     end
+    end
+    
+function teleportTO(placeCFrame)
+    local plyer = Game.Players.LocalPlayer;
+    if plyer.Character then
+        plyer.Character.HumanoidRootPart.CFrame = placeCFrame;
+    end
+end
+function teleportWorld(world)
+    if game:GetService("Workspace").Worlds:FindFirstChild(world) then
+        teleportTO(game:GetService("Workspace").Worlds[world].Teleport.CFrame)
+    end
+end
+
+
+
+
+
+
+
+
+
+
+
+--tabs
+local FarmTab = Window:MakeTab({
+	Name = "AutoFarm",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+--toggles
+FarmTab:AddToggle({
+	Name = "Auto Click",
+	Default = false,
+	Callback = function(Value)
+		_G.autoTap = Value
+        autoTap()
+	end    
+})
+FarmTab:AddToggle({
+	Name = "Auto Rebirth",
+	Default = false,
+	Callback = function(Value)
+		_G.autoRebirth = Value
+        autoRebirth()
+	end    
+})
+FarmTab:AddToggle({
+	Name = "Auto Egg",
+	Default = false,
+	Callback = function(Value)
+		_G.autoEgg = Value
+        autoEgg()
+	end    
+})
+
+local TeleportTab = Window:MakeTab({
+	Name = "TELEPORT",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+TeleportTab:AddButton({
+	Name = "Desert",
+	Callback = function()
+            teleportWorld('Desert')
+  	end    
+})
+
+
+
+
+
+end
+OrionLib:Init()
+
