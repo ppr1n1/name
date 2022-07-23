@@ -1,38 +1,144 @@
     if game.PlaceId == 5490351219 then
-    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-    local Window = OrionLib:MakeWindow({Name = "Raping hub", HidePremium = false, IntroEnabled = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+    local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/y-neutrality/sythe/main/mainlib"))() -- actual ui
+    local notifications = loadstring(game:HttpGet(("https://raw.githubusercontent.com/y-neutrality/sythe/main/notiflib"),true))() -- notifications
+
+    local window = library:new({textsize = 13.5, 
+      font = Enum.Font.RobotoMono, 
+      name = "Raping Hub", 
+      color = Color3.fromRGB(227, 135, 43)
+    })
 
     --values
     _G.autoTap = true
     _G.autoRebirth = true
     _G.autoEgg = true
+    _G.tpEggs = true
 
-    --functions
+    
+local remotePath = game:GetService("ReplicatedStorage").Aero.AeroRemoteServices;
 
+local clickMod = require(game:GetService("Players").wadswadsfafasf.PlayerScripts.Aero.Controllers.UI.Click)
+
+
+
+
+    --------------------------
+    --      functions       --
+    --------------------------
     function autoTap()
+        spawn(function ()
         while _G.autoTap == true do
-            local args = {[1] = 1}
-            game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            local args = {[1] = 10000000}
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
+            game.ReplicatedStorage.Aero.AeroRemoteServices.ClickService.Click:FireServer(unpack(args))
             wait()
         end
+    end)
         end
 
 
     function autoRebirth()
         spawn(function ()
+
             while _G.autoRebirth == true do
-                local args = {[1] = 1}
-                game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(unpack(args))
+                local args = {[1] = 10000000}
+                game.ReplicatedStorage.Aero.AeroRemoteServices.RebirthService.BuyRebirths:FireServer(unpack(args))
                 wait()
         end 
         end)
         end
+
+        function tpEggs()
+            spawn(function ()
+    
+                while _G.tpEggs == true do
+                    local args = {[1] = 10}
+                    game.Workspace.ScriptObjects.BasePickup.HumanoidRootPart.Position = game.Workspace.wadswadsfafasf.HumanoidRootPart.Position
+                    wait()
+            end 
+            end)
+            end
+
+
     function autoEgg()
+        spawn(function ()
         while _G.autoEgg == true do
-            local args = {[1] = "basic"}
+            local args = {[1] = "easter"}
             game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggService.Purchase:FireServer(unpack(args))
-            wait(5)
+            game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggService.Purchase:FireServer(unpack(args))
+            game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggService.Purchase:FireServer(unpack(args))
+            game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggService.Purchase:FireServer(unpack(args))
+            game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggService.Purchase:FireServer(unpack(args))
+            game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggService.Purchase:FireServer(unpack(args))
+            game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggService.Purchase:FireServer(unpack(args))
+            game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EggService.Purchase:FireServer(unpack(args))
+            wait()
         end
+    end)
         end
         
     function teleportTO(placeCFrame)
@@ -47,65 +153,93 @@
         end
     end
 
-
-
-
-
-
-
-
-
+------------------------ END OF funcs
 
 
     --tabs
-    local FarmTab = Window:MakeTab({
-        Name = "AutoFarm",
-        Icon = "rbxassetid://4483345998",
-        PremiumOnly = false
-    })
+    local FarmTab = window:page({name = "AutoFarm"}) --
+    local TeleportTab = window:page({name = "Teleports"}) --
+
+    --sections
+
+    local farming = FarmTab:section({name = "Farming QOL",side = "left",size = 125})  
+    local teleports = TeleportTab:section({name = "Teleports",side = "left",size = 250})  
+
+--[[
+         name = text that appears at the top of the section,
+         side = side that the section appears (if there are 2 lefts, they will not be put together, they will distance themselves under/above),
+         size = size of the section (height)
+--]]
+
     --toggles
-    FarmTab:AddToggle({
-        Name = "Auto Click",
-        Default = false,
-        Callback = function(Value)
-            _G.autoTap = Value
-            autoTap()
-        end    
-    })
-    FarmTab:AddToggle({
-        Name = "Auto Rebirth",
-        Default = false,
-        Callback = function(Value)
-            _G.autoRebirth = Value
-            autoRebirth()
-        end    
-    })
-    FarmTab:AddToggle({
-        Name = "Auto Egg",
-        Default = false,
-        Callback = function(Value)
-            _G.autoEgg = Value
-            autoEgg()
-        end    
-    })
+    
+    farming:toggle({name = "Auto Click",def = false, callback = function(value)
+        _G.autoTap = value
+        autoTap()
+    end})
 
-    local TeleportTab = Window:MakeTab({
-        Name = "TELEPORT",
-        Icon = "rbxassetid://4483345998",
-        PremiumOnly = false
-    })
+    farming:toggle({name = "Auto Rebirth",def = false, callback = function(value)
+        _G.autoRebirth = value
+        autoRebirth()
+    end})
 
-    TeleportTab:AddButton({
-        Name = "Desert",
+    farming:toggle({name = "Auto Egg",def = false, callback = function(value)
+        _G.autoEgg = value
+        autoEgg()
+    end})
+
+    farming:toggle({name = "TP Eggs",def = false, callback = function(value)
+        _G.tpEggs = value
+        tpEggs()
+    end})
+   
+    teleports:dropdown({name = "Worlds",def = "",max = 4,options = {"Desert","Winter","Storm","City"},callback = function(chosen)
+        teleportWorld(chosen)
+     end})
+
+
+     teleports:button({name = "Delete GUI",callback = function()
+        game.CoreGui["Sythe_hRCgUQjAcjcegcjxcxSUg"]:Destroy()
+     end})
+   
+end
+    
+
+--[[
+
+
+These are the notifications that you can use
+
+notifications:notify{
+    Title = "Warning!",
+    Description = "You are going to go idle, would you like to enable anti-afk?",
+    Accept = {
+    Text = "Yes",
         Callback = function()
-                teleportWorld('Desert')
-        end    
-    })
+            print("Accepted")
+        end,
+    },
+    Dismiss = {
+        Text = "No",
+        Callback = function()
+            print("Declined")
+        end,
+    }
+}
 
+notifications:message{
+    Title = "Walkspeed <font color='rgb(130, 220, 120)'>Enabled</font>",
+    Description = "Current walkspeed: <b>32</b>",
+    Icon = 6023426926
+}
 
+notifications:notify{
+    Title = "Notifications showcase",
+    Description = "Notifications module",
+    Accept = {
+        Text = "Done"
+    },
+    Length = 10
+}
 
-
-
-    end
-    OrionLib:Init()
-
+]]
